@@ -57,27 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       // Container：箱的なもの
-      body: Container(
-        height: double.infinity,
-        color: Colors.red,
-
-        //　Padding：周りの空白
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-
-          // Row：横に並べてく
-          // Column：縦に並べてく
-          child: Row(
-            children: [
-              Text("押された回数"),
-              Text("押された回数"),
-              Text("押された回数"),
-              Text("押された回数"),
-            ],
-          ),
+      body: Center(
+        child: RaisedButton(
+          child: Text("次へ"),
+          onPressed: (){
+            //  ここに押したら反応するコードを書く
+            //　画面遷移のコード
+          },
         ),
       ),
-
       //　floatingActionButton：右下のボタン
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
